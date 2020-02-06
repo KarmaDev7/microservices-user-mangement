@@ -1,0 +1,38 @@
+server:
+  port: 0
+spring:
+  rabbitmq:
+    host:  localhost
+    port:  5672
+    username: guest
+    password: guest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/usermicroservice
+    username: root
+    password: sumit
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+#management:
+#  server:
+#    port: 9001
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: "always"
+
+
+#token:
+#  expiration_time: 164
+#  secret: hfgry463hf746hf573ydh475fhy5739
+#login:
+#  url:
+#    path: /users/authenticate
